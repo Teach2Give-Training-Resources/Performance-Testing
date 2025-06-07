@@ -2,8 +2,8 @@ import http from 'k6/http';
 import { check, sleep } from 'k6';
 
 export const options = {
-    vus: 50, // 50 virtual users
-    iterations: 50, // one registration per VU
+    vus: 1,        // 1 virtual user
+    iterations: 1, // 1 registration attempt
 };
 
 function randomEmail(): string {

@@ -1,19 +1,14 @@
-
-
-
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
 export const options = {
-    vus: 100, // 10 virtual users for smoke test
-    iterations: 100,
+    vus: 1,        // 1 virtual user for smoke test
+    iterations: 1, // 1 iteration for quick health check
 };
 
 export default function () {
-    // Update the URL and token as needed
     const url = 'http://localhost:8081/todos';
 
-    // If your /todos endpoint requires authentication, add a valid token here
     const params = {
         headers: {
             'Content-Type': 'application/json',

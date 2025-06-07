@@ -1,5 +1,7 @@
 # Perfomance Testing
 
+![1749298447825](image/README/1749298447825.png)
+
 **Performance testing** is a type of software testing that evaluates how an application behaves under various levels of load, stress, or demand. It measures responsiveness, stability, scalability, and resource usage to ensure the system meets performance requirements.
 
 **Why do we need performance testing?**

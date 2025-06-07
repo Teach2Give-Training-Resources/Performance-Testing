@@ -5,24 +5,24 @@ const BASE_URL = 'http://localhost:8081'; // Update if your API runs on a differ
 
 export const options = {
     stages: [
-        { duration: '30s', target: 40 }, // ramp-up to 40 users over 30 seconds
-        { duration: '40s', target: 50 }, // stay at 50 users for 40 seconds
-        { duration: '10s', target: 0 },  // ramp-down to 0 users
+        { duration: '30s', target: 20 },   // ramp-up to 20 users
+        { duration: '30s', target: 100 },  // ramp-up to 100 users
+        { duration: '30s', target: 200 },  // ramp-up to 200 users
+        { duration: '1m', target: 300 },   // spike to 300 users
+        { duration: '30s', target: 0 },    // ramp-down to 0 users
     ],
     ext: {
         loadimpact: {
-            name: 'Todos GET Load Test',
+            name: 'Todos GET Stress Test',
         },
     },
 };
 
 export default function () {
-    // If authentication is required, add a valid token here
-    // const token = 'YOUR_VALID_TOKEN';
     const res = http.get(`${BASE_URL}/todos`, {
         headers: {
             'Content-Type': 'application/json',
-            // 'Authorization': `Bearer ${token}`,
+            // 'Authorization': `Bearer YOUR_VALID_TOKEN`,
         },
     });
 
