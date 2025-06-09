@@ -10,6 +10,7 @@
     "generate": "drizzle-kit generate",
     "migrate": "tsx src/drizzle/migrate.ts",
     "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
     "smoke:login": "k6 run load-tests/smoke/login.smoke.ts",
     "smoke:register": "k6 run load-tests/smoke/register.smoke.ts",
     "smoke:todos": "k6 run load-tests/smoke/todos.get.smoke.ts",
@@ -31,6 +32,8 @@
     "@types/k6": "^1.0.2",
     "@types/nodemailer": "^6.4.17",
     "@types/pg": "^8.15.2",
+    "@typescript-eslint/eslint-plugin": "^8.33.1",
+    "@typescript-eslint/parser": "^8.33.1",
     "drizzle-kit": "^0.31.1",
     "jest": "^29.7.0",
     "k6": "^0.0.0",
@@ -47,6 +50,7 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "nodemailer": "^7.0.3",
-    "pg": "^8.16.0"
+    "pg": "^8.16.0",
+    "remove": "^0.1.5"
   }
 }
