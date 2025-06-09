@@ -29,6 +29,9 @@ importers:
       pg:
         specifier: ^8.16.0
         version: 8.16.0
+      rate-limiter-flexible:
+        specifier: ^7.1.1
+        version: 7.1.1
       remove:
         specifier: ^0.1.5
         version: 0.1.5
@@ -2366,6 +2369,9 @@ packages:
   range-parser@1.2.1:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
     engines: {node: '>= 0.6'}
+
+  rate-limiter-flexible@7.1.1:
+    resolution: {integrity: sha512-lsYRcqRSJrKBNt6pMzBJTiCJP5KnwsGWdObMZxd19JFUJRntM+yuHs4/2bs6NZweSLgpsDcykvzyQaumoslWQg==}
 
   raw-body@3.0.0:
     resolution: {integrity: sha512-RmkhL8CAyCRPXCE28MMH0z2PNWQBNk2Q09ZdxM9IOOXwxwZbN+qbWaatPkdkWIKL2ZVDImrN/pK5HTRz2PcS4g==}
@@ -5368,6 +5374,8 @@ snapshots:
   queue-microtask@1.2.3: {}
 
   range-parser@1.2.1: {}
+
+  rate-limiter-flexible@7.1.1: {}
 
   raw-body@3.0.0:
     dependencies:

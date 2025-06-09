@@ -11,7 +11,6 @@ const user = (app: Express) => {
             } catch (error) {
                 next(error)
             }
-
         }
     )
 
